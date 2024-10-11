@@ -1,0 +1,28 @@
+Package: tAUCCR
+Type: Package
+Title: Analyzing Heterogeneity in Biomarker Discriminative Performance under Competing Risks
+Version: 1.0
+Date: 2024-10-07
+Authors@R: person(given = "Xinran",
+           family = "Huang",
+           role = c("aut", "cre"),
+           email = "huangxrtc@gmail.com",
+           comment = c(ORCID = "0000-0002-8126-9735"))
+Description: This package performs regression analysis to investigate the impact of covariates on the time-dependent AUC under competing risks, based on the manuscript "Analyzing Heterogeneity in Biomarker Discriminative Performance under Competing Risks".
+License: MIT + file LICENSE
+Imports: 
+    dplyr,
+    Rcpp,
+    rlang,
+    Rcpp (>= 1.0.11),
+    tidyr
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    fastglm
+Depends: 
+    R (>= 2.10)
