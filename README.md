@@ -60,10 +60,12 @@ following components:
 - `rhoweight`: Kernel weight vector, calculated with continuous
   covariates
 
-### Function: covariance_cal
+### Function: covariance_cal_wrapper
 
-The function `covariance_cal` computes three matrices: $\Sigma_1$,
-$\Sigma_2$, and $V$. The asymptotic variance, $V$, is defined as:
+The function `covariance_cal_wrapper` is a wrapper function that calls
+the c++ function covariance_cal, which computes three matrices:
+$\Sigma_1$, $\Sigma_2$, and $V$. The asymptotic variance, $V$, is
+defined as:
 
 $$
 V = \Sigma_1^{-1} \Sigma_2 \Sigma_1^{-1}
@@ -223,10 +225,10 @@ p_value <- 2 * (1 - pnorm(abs(z_value)))
 You can also estimate the time-dependent AUC with confidence interval
 for each cause of failure. The following code estimates the
 time-dependent AUC for cause 1, given xc = 1 and xd = 0 at time t0
-ranges from 0 to 10:
+ranges from 0.1 to 1:
 
 ``` r
-t0 <- seq(0, 10, by = 0.1)
+t0 <- seq(0.1, 1, by = 0.1)
 cov.val = c(1,0)
 ci <- auc_pred(beta.hat,V,t0,cov.val,  nf=7)
 ```
