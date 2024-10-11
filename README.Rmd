@@ -58,8 +58,8 @@ This function returns a dataframe where each row corresponds to a case-control p
 - `rho01` and `rho02`: Numeric vectors representing concordant and discordant event values, respectively, when continuous covariates are present
 - `rhoweight`: Kernel weight vector, calculated with continuous covariates
 
-### Function: covariance_cal
-The function `covariance_cal` computes three matrices: \(\Sigma_1\), \(\Sigma_2\), and \(V\). The asymptotic variance, \(V\), is defined as:
+### Function: covariance_cal_wrapper
+The function `covariance_cal_wrapper` is a wrapper function that calls the c++ function covariance_cal, which computes three matrices: \(\Sigma_1\), \(\Sigma_2\), and \(V\). The asymptotic variance, \(V\), is defined as:
 
 \[
 V = \Sigma_1^{-1} \Sigma_2 \Sigma_1^{-1}
