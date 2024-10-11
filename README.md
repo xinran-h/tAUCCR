@@ -207,7 +207,7 @@ variance and stores the result in the variable `V`.
 
 ``` r
 
-L=covariance_cal(beta.hat,M0,rho01,rho02,t(XS),ordic,ordjc)
+L=covariance_cal_wrapper(beta.hat,M0,rho01,rho02,t(XS),ordic,ordjc)
 V = L$v    
 ```
 

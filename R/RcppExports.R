@@ -19,6 +19,6 @@
 #'   \item \code{v}: The asymptotic variance \eqn{V}.
 #' }
 covariance_cal <- function(a, b, c, d, e, f, g) {
-    .Call(`_tAUCCR_covariance_cal`, a, b, c, d, e, f, g)
+    .Call('_tAUCCR_covariance_cal', PACKAGE = 'tAUCCR', a, b, c, d, e, f, g)
 }
 
