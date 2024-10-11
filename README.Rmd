@@ -180,10 +180,10 @@ z_value <- beta.hat/ SE
 p_value <- 2 * (1 - pnorm(abs(z_value)))
 ```
 
-You can also estimate the time-dependent AUC with confidence interval for each cause of failure. The following code estimates the time-dependent AUC for cause 1, given xc = 1 and xd = 0 at time t0 ranges from 0 to 10:
+You can also estimate the time-dependent AUC with confidence interval for each cause of failure. The following code estimates the time-dependent AUC for cause 1, given xc = 1 and xd = 0 at time t0 ranges from 0.1 to 1:
 
 ```{r, eval = F}
-t0 <- seq(0, 10, by = 0.1)
+t0 <- seq(0.1, 1, by = 0.1)
 cov.val = c(1,0)
 ci <- auc_pred(beta.hat,V,t0,cov.val,  nf=7)
 ```

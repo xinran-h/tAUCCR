@@ -134,7 +134,7 @@ auc_pred <- function(beta.hat,V,t0,cov.val,
                         nf=7)
 {
   n0 <- length(beta.hat)-nf-1
-  se.store.1<- matrix(0,ncol=length(t0),nrow=2)
+  se.store.1<- matrix(0,ncol=length(t0),nrow=3)
   for(i in 1:length(t0)){
     if (nf == 3) {
       poly <- c(1, log(t0[i]), t0[i], t0[i]^2, cov.val)
