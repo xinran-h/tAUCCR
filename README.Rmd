@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package performs regression analysis to investigate the impact of covariates on the time-dependent AUC under competing risks, based on the manuscript "Analyzing Heterogeneity in Biomarker Discriminative Performance under Competing Risks".
+This package performs regression analysis to investigate the impact of covariates on the time-dependent AUC under competing risks, based on the manuscript "Accounting for Competing Risks in the Assessment of Prognostic Biomarkers’ Discriminative Accuracy".
 
 
 ## Installation
