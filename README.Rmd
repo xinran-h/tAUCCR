@@ -44,8 +44,8 @@ The function data_crossingdc is used to reshape data for each cause of failure s
 - `vxs` Covariate matrix
 - `eta` Censoring indicator for each event type
 - `c0` A constant value used for the bandwidth h, h = c0*n^(-1/3)
-- `cont_vars` A vector of continuous variables.
-- `discrete_vars` A vector of discrete variables.
+- `cont_vars` A vector of continuous variables in vxs.
+- `discrete_vars` A vector of discrete variables in vxs.
 
 This function returns a dataframe where each row corresponds to a case-control pair at each observed event time. The dataframe has the following components:
 

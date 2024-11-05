@@ -8,8 +8,8 @@
 
 This package performs regression analysis to investigate the impact of
 covariates on the time-dependent AUC under competing risks, based on the
-manuscript “Analyzing Heterogeneity in Biomarker Discriminative
-Performance under Competing Risks”.
+manuscript “Accounting for Competing Risks in the Assessment of
+Prognostic Biomarkers’ Discriminative Accuracy”.
 
 ## Installation
 
@@ -39,8 +39,8 @@ estimation. The arguments of this function are listed below:
 - `vxs` Covariate matrix
 - `eta` Censoring indicator for each event type
 - `c0` A constant value used for the bandwidth h, h = c0\*n^(-1/3)
-- `cont_vars` A vector of continuous variables.
-- `discrete_vars` A vector of discrete variables.
+- `cont_vars` A vector of continuous variables in vxs.
+- `discrete_vars` A vector of discrete variables in vxs.
 
 This function returns a dataframe where each row corresponds to a
 case-control pair at each observed event time. The dataframe has the

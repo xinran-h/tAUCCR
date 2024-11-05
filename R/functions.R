@@ -14,8 +14,8 @@
 #' @param vxs Covariate matrix
 #' @param eta Censoring indicator for each event type
 #' @param c0 A constant value used for the bandwidth h, h = c0*n^(-1/3)
-#' @param cont_vars A vector of continuous variables.
-#' @param discrete_vars A vector of discrete variables.
+#' @param cont_vars A vector of continuous variables in vxs.
+#' @param discrete_vars A vector of discrete variables in vxs.
 #' @returns A dataframe where each row corresponds to a case-control pair at each observed event time.
 #' The dataframe has the following components:
 #' \itemize{
