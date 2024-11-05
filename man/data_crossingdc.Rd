@@ -21,9 +21,9 @@ data_crossingdc(n, vt, vc, vm, vxs, eta, c0, cont_vars, discrete_vars)
 
 \item{c0}{A constant value used for the bandwidth h, h = c0*n^(-1/3)}
 
-\item{cont_vars}{A vector of continuous variables.}
+\item{cont_vars}{A vector of continuous variables in vxs.}
 
-\item{discrete_vars}{A vector of discrete variables.}
+\item{discrete_vars}{A vector of discrete variables in vxs.}
 }
 \value{
 A dataframe where each row corresponds to a case-control pair at each observed event time.
