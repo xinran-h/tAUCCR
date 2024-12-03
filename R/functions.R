@@ -40,6 +40,9 @@ data_crossingdc = function(n, vt,vc,vm,vxs,eta,c0, cont_vars,discrete_vars)
   ni<-length(vc) 
   index<-which(vc == eta)
   dat<-cbind(l=1:ni,vt,vm,vc,vxs) 
+  if (!is.data.frame(dat)) {
+    dat <- as.data.frame(dat)
+  }
   dati<-dat[index,]%>%dplyr::rename(i=l)
   
   names(dati)[1:4]<-c("i","yi","mi","event_indicator_i")
