@@ -43,9 +43,9 @@ data_crossingdc = function(n, vt,vc,vm,vxs,eta,c0, cont_vars,discrete_vars)
   dati<-dat[index,]%>%dplyr::rename(i=l)
   
   names(dati)[1:4]<-c("i","yi","mi","event_indicator_i")
-  names(dati)[5:(nx+4)]<-paste0(names(vxs),"i") 
+  names(dati)[5:(nx+4)]<-paste0(colnames(vxs),"i") 
   names(dat)[1:4]<-c("l","yl","ml","event_indicator_l") 
-  names(dat)[5:(nx+4)]<-paste0(names(vxs),"l")
+  names(dat)[5:(nx+4)]<-paste0(colnames(vxs),"l")
   
   
   if (!is.null(cont_vars)) {
