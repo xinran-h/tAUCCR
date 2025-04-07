@@ -6,7 +6,7 @@ Date: 2024-10-07
 Authors@R: person(given = "Xinran",
            family = "Huang",
            role = c("aut", "cre"),
-           email = "huangxrtc@gmail.com",
+           email = "huangxr.2019@gmail.com",
            comment = c(ORCID = "0000-0002-8126-9735"))
 Description: This package performs regression analysis to investigate the impact of covariates on the time-dependent AUC under competing risks, based on the manuscript "Analyzing Heterogeneity in Biomarker Discriminative Performance under Competing Risks".
 License: MIT + file LICENSE
